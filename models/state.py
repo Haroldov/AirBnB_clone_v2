@@ -22,7 +22,6 @@ class State(BaseModel, Base):
             """ getter for cities """
 
             tmp_list = []
-            print(type(models.storage))
             for key, obj in models.storage.all().items():
                 if "City" in key and obj.state_id == self.id:
                     tmp_list.append(obj)
