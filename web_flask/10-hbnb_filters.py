@@ -28,7 +28,7 @@ def listStates(ids=None):
     elif ids is not None and "State." + str(ids) not in states:
         states = None
         title = "Not found!"
-    return render_template('9-states.html',
+    return render_template('10-hbnb_filters.html',
                            states=states,
                            title=title,
                            cities=cities)
@@ -42,4 +42,4 @@ def teardown_db(listStates):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
