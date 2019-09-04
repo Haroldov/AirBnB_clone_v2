@@ -14,7 +14,7 @@ def listStates(ids=None):
 
     states = models.storage.all("State")
     cities = None
-    title = None
+    title = "States"
     if ids is not None and "State." + str(ids) in states:
         if 'HBNB_TYPE_STORAGE' in environ and environ['HBNB_TYPE_STORAGE'] == 'db':
             title = "State: " + states["State." + str(ids)].name
