@@ -16,7 +16,8 @@ def listStates(ids=None):
     cities = None
     title = "States"
     if ids is not None and "State." + str(ids) in states:
-        if 'HBNB_TYPE_STORAGE' in environ and environ['HBNB_TYPE_STORAGE'] == 'db':
+        if 'HBNB_TYPE_STORAGE' in environ and\
+           environ['HBNB_TYPE_STORAGE'] == 'db':
             title = "State: " + states["State." + str(ids)].name
             cities = states["State." + str(ids)].cities
             states = "yes"
