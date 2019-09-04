@@ -4,6 +4,7 @@ import json
 from os import environ
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
+from sqlalchemy.orm.session import Session
 from models.base_model import BaseModel, Base
 from models.user import User
 from models.state import State
@@ -75,4 +76,4 @@ class DBStorage:
     def close(self):
         """ doc """
 
-        pass
+        Session.close(self.__session)
