@@ -11,7 +11,7 @@ def listStates():
     """ return HTML template for listing states and cities """
 
     return render_template('10-hbnb_filters.html',
-                           states=models.storage.all("State"))
+                           states=models.storage.all("State"), amenities=models.storage.all("Amenity"))
 
 
 @app.teardown_appcontext
