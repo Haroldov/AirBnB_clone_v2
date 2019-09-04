@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+B1;5202;0c<!DOCTYPE html>
 <HTML lang="en">
     <HEAD>
         <TITLE>HBNB</TITLE>
@@ -10,7 +10,7 @@
       <H3>Cities:</H3>
       <UL>
 	{% for city in cities|sort(attribute='name') %}
-	<LI>City: {{city.id}}: <B><city.name></B></LI>
+	<LI>City: {{city.id}}: <B>{{city.name}}</B></LI>
 	{% endfor %}
       </UL>
       {% elif states is iterable %}
