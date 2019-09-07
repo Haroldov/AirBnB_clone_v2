@@ -62,13 +62,13 @@ button:hover {
     padding: 20px 0;
     margin-left: -5px;
     margin-top: 1%;
-    height: 100%;
+    height: fit-content;
     overflow-y: scroll;
     max-height: 300px;
 }
 .locations .popover {
     margin-top: 1%;
-    height: 100%;
+    height: fit-content;
     overflow-y: scroll;
     max-height: 300px;
 }
